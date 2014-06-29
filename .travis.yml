@@ -9,7 +9,7 @@ env:
 ghc:
   - 7.6
 install:
-  - wget http://JoeyEremondi.github.io/Hakyll-executable/site.bin
+  - wget http://JoeyEremondi.github.io/Hakyll-executable/site.bin 
   - chmod +x ./site.bin
 before_script:
   - cd _site
