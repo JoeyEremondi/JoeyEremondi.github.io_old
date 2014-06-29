@@ -1,12 +1,12 @@
-language: haskell
+#language: haskell
 branches:
   only:
   - source
 env:
   global:
   - secure: h2220Jyqf/vh6va/X3PyAHb5GvPxcom/8LSq5UMJEqICtWR/jrbepItzP+esxunT/jHcz5LkoX/0BrSQV1e07uziDfeeV/NbWdi37PcwL7yvYkmPeY+mMfIqDAVIgrECVN2inafEpokCS2elhQjQZjAGkLWYbqOhXZNv5h9VO1Y=
-ghc:
-- 7.6
+#ghc:
+#- 7.6
 install:
 - wget http://JoeyEremondi.github.io/Hakyll-executable/site.bin
 - chmod +x ./site.bin
