@@ -24,5 +24,5 @@ after_script:
   - git config --global user.email "joey@eremondi.com"
   - git config --global user.name "JoeyEremondi"
   - git commit -m "snapshot $(date '+%m/%d/%y %H:%M')"
-  - git push "$REPO_URL" master | grep -v http
+  - git push "$PAGES_URL" master 2>&1 | grep -v http
   - cd ..
