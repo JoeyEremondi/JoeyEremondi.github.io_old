@@ -24,6 +24,6 @@ after_script:
   - git config --global user.name "JoeyEremondi"
   - git add --all
   - git commit -m "snapshot $(date '+%m/%d/%y %H:%M')"
-  - echo ${PAGES_URL: -10}
+  - echo "${PAGES_URL: -10}"
   - git push "$PAGES_URL" master | grep -v http
   - cd ..
