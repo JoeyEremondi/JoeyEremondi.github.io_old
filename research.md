@@ -5,6 +5,10 @@ comments: true
 toc: true
 ---
 
+**Reversal Bounded Counter Machines**
+
+**Supervisor: Ian McQuillan**
+
 
 **Shuffle Operator on Strings**
 
