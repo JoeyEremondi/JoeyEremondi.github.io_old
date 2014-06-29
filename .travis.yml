@@ -16,13 +16,13 @@ before_script:
   - git checkout master
   - git pull #origin master
   - cd ..
-script: ./site.bin rebuild
+script: ./site.bin build
 after_script:
   - cd _site
   - git status
   - git config --global user.email "joey@eremondi.com"
   - git config --global user.name "JoeyEremondi"
-  - git --git-dir=.git --work-tree=. add . 
-  - git --git-dir=.git --work-tree=. commit -m "snapshot $(date '+%m/%d/%y %H:%M')"
+  - git add --all
+  - git commit -m "snapshot $(date '+%m/%d/%y %H:%M')"
   - git push "$PAGES_URL" master 2>&1 | grep -v http
   - cd ..
