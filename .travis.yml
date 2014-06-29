@@ -9,7 +9,7 @@ env:
 ghc:
   - 7.6
 install:
-  - wget http://JoeyEremondi.github.io/Hakyll-executable/site.bin 
+  - wget http://JoeyEremondi.github.io/Hakyll-executable/site.bin
   - chmod +x ./site.bin
 before_script:
   - cd _site
@@ -20,9 +20,9 @@ script: ./site.bin rebuild
 after_script:
   - cd _site
   - git status
-  - git add --all --git-dir=.git --work-tree=. . 
   - git config --global user.email "joey@eremondi.com"
   - git config --global user.name "JoeyEremondi"
-  - git commit -m "snapshot $(date '+%m/%d/%y %H:%M')"
+  - git --git-dir=.git --work-tree=. add . 
+  - git --git-dir=.git --work-tree=. commit -m "snapshot $(date '+%m/%d/%y %H:%M')"
   - git push "$PAGES_URL" master 2>&1 | grep -v http
   - cd ..
