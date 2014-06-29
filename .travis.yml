@@ -4,7 +4,6 @@ branches:
   - source
 env:
   global:
-  - secure: FfF98Hf9xwiyUvNNIipROY6NurVNMOw3M1K0jGnQQT7IHbbId+dnDnHq5CG0EFWLiPo6GfP//7zAAEIE7YEOPY6d7FiIHhhplL+RFL7pUIISfzvUW4aN4LEnMnX0PhImiJ/o93eD8wa/IifJK8VBrEYPldYYSuOZk70UVQdLW2I=
   - secure: h2220Jyqf/vh6va/X3PyAHb5GvPxcom/8LSq5UMJEqICtWR/jrbepItzP+esxunT/jHcz5LkoX/0BrSQV1e07uziDfeeV/NbWdi37PcwL7yvYkmPeY+mMfIqDAVIgrECVN2inafEpokCS2elhQjQZjAGkLWYbqOhXZNv5h9VO1Y=
 ghc:
 - 7.6
