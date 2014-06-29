@@ -20,7 +20,7 @@ script: ./site.bin rebuild
 after_script:
   - cd _site
   - git status
-  - git add ./*
+  - git add --all
   - git config --global user.email "joey@eremondi.com"
   - git config --global user.name "JoeyEremondi"
   - git commit -m "snapshot $(date '+%m/%d/%y %H:%M')"
