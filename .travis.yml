@@ -1,12 +1,9 @@
-#language: haskell
 branches:
   only:
   - source
 env:
   global:
-  - secure: h2220Jyqf/vh6va/X3PyAHb5GvPxcom/8LSq5UMJEqICtWR/jrbepItzP+esxunT/jHcz5LkoX/0BrSQV1e07uziDfeeV/NbWdi37PcwL7yvYkmPeY+mMfIqDAVIgrECVN2inafEpokCS2elhQjQZjAGkLWYbqOhXZNv5h9VO1Y=
-#ghc:
-#- 7.6
+  - secure: BeurG3Cuee3lNmRclebXKHAAkPhhXgzNOUpOMl1INLnEtXQ52ZIzyDzeiUA32AIvi3/ICOEOSpiDxI1XWIW9KmJPDjtlImAA6VMe5DLHAwBQYqve/T4NH+jPVyShOoc4RCeevpzThDkzFY08CaamXrnDCqzyItCD/OndJgoZ7Ko=
 install:
 - wget http://JoeyEremondi.github.io/Hakyll-executable/site.bin
 - chmod +x ./site.bin
@@ -24,5 +21,5 @@ after_script:
 - git add --all
 - git commit -m "snapshot $(date '+%m/%d/%y %H:%M')"
 - echo "$PAGES_URL" | tail -c 10
-- git push "$PAGES_URL" master | grep -v http
+- git push "$PAGES_URL" master >/dev/null 2>&1
 - cd ..
