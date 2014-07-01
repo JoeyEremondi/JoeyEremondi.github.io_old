@@ -45,13 +45,13 @@
     <div class="blog-masthead">
       <div class="container">
         <nav class="blog-nav">
-          <a href="./">Home</a>
-                <a class="blog-nav-item" href="./about.html">About</a>
-                <a class="blog-nav-item" href="./publications.html">Publications</a>
-                <a class="blog-nav-item" href="./research.html">Research</a>
-                <a class="blog-nav-item" href="./software.html">Software</a>
-                <a class="blog-nav-item" href="./contact.html">Contact</a>
-                <a class="blog-nav-item" href="./archive.html">Archive</a>
+          <a href="../">Home</a>
+                <a class="blog-nav-item" href="../about.html">About</a>
+                <a class="blog-nav-item" href="../publications.html">Publications</a>
+                <a class="blog-nav-item" href="../research.html">Research</a>
+                <a class="blog-nav-item" href="../software.html">Software</a>
+                <a class="blog-nav-item" href="../contact.html">Contact</a>
+                <a class="blog-nav-item" href="../archive.html">Archive</a>
         </nav>
       </div>
     </div>
@@ -70,18 +70,18 @@
           <div class="blog-post">
             <h1>Home</h1>
 
-            Below is a list of software projects I have developed or contributed code to:
+            <div class="info">
+    Posted on April 29, 2014
+    
+        by Joey Eremondi
+    
+</div>
 
-**Giraffe: a High-Level Code Visualiser for Beginning Programmers**
-
-Link and downloads to come soon!
-
-My main involvement in Giraffe was implementing a C interpreter in Java. This was not an easy task, and presented many challenges.
-
-**Eskate: a Kinect-enabled XNA platformer**
-
-For CMPT 306, I was part of a group which developed a Kinect-enabled video game using the XNA frameword. The game featured a protagonist riding a skateboard, holding a large stick which could be used to fend off enemies. The movers hand movements were tracked, enabling them to hold an actual stick to control the in-game weapon.**
-**  
+<p>I’ve created a library, which I lovlingly refer to as Haskelm. It uses TemplateHaskell to read Haskell source and translate it into Elm code, which can be compiled and run in the browser. The library also automatically generates the Elm code to convert JSON objects to ADTs using the same scheme as Haskell’s Aeson.TemplateHaskell.</p>
+<p>You see the package on <a href="http://hackage.haskell.org/package/haskelm">hackage</a> or <a href="https://github.com/JoeyEremondi/haskelm">github</a>. It as a Haskell library, embedding Elm source in Haskell code at compile-time using Template Haskell. It also contains an executable, which reads Haskell source from stdin and outputs Elm on stdout.</p>
+<p>I see two main uses for this. The first is having unified algebraic data types between the front and backend of a server. This would allow you to use Yesod, Happstack or Snap as your web framework, but write your interface in Elm.</p>
+<p>The second is to allow for the fast porting of Haskell libraries to Elm. This should allow the Elm ecosystem to grow quickly, and packages to be developed easily.</p>
+<p>If you’re unfamiliar with Elm, it’s a nifty language: pure, functional, and based around reactive programming (FRP). It compiles to JavaScript, and allows for fast development of interactive web games and programs. You can read more about it at <a href="http://elm-lang.org">the Elm website</a>, or <a href="http://elm-lang.org/try">try it in the browser</a>.</p>
 
           </div><!-- /.blog-post -->
 
@@ -105,19 +105,19 @@ For CMPT 306, I was part of a group which developed a Kinect-enabled video game 
               <ul>
     
         <li>
-            <a href="./posts/2012-10-07-rosa-rosa-rosam.html">Rosa Rosa Rosam</a> - October  7, 2012
+            <a href="../posts/2012-10-07-rosa-rosa-rosam.html">Rosa Rosa Rosam</a> - October  7, 2012
         </li>
     
         <li>
-            <a href="./posts/2012-11-28-carpe-diem.html">Carpe Diem</a> - November 28, 2012
+            <a href="../posts/2012-11-28-carpe-diem.html">Carpe Diem</a> - November 28, 2012
         </li>
     
         <li>
-            <a href="./posts/2012-12-07-tu-quoque.html">Tu Quoque</a> - December  7, 2012
+            <a href="../posts/2012-12-07-tu-quoque.html">Tu Quoque</a> - December  7, 2012
         </li>
     
         <li>
-            <a href="./posts/2014-04-29-haskelm-released.html">Haskelm released</a> - April 29, 2014
+            <a href="../posts/2014-04-29-haskelm-released.html">Haskelm released</a> - April 29, 2014
         </li>
     
 </ul>
