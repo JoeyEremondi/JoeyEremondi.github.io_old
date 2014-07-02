@@ -14,6 +14,7 @@ This library is allows for unified Algebraic Data Types to be used in both a Has
 and an Elm frontend, seamlessly sent using JSON.
 
 See it on [GitHub](http://github.com/JoeyEremondi/Haskelm) or on [Hackage](https://hackage.haskell.org/package/haskelm).
+
 **Giraffe: a High-Level Code Visualiser for Beginning Programmers**
 
 Link and downloads to come soon!
