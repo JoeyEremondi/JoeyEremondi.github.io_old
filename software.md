@@ -1,12 +1,19 @@
 ---
-title: Softwarehho
+title: Software
 author: Joey Eremondi
 comments: true
 toc: true
 ---
 
-Below is a list of software projects I have developed or contributed code to:
+Below is a list of software projects I have developed or contributed code to, as well as
+packages I maintain:
 
+**Haskelm: Haskell to Elm translation**
+
+This library is allows for unified Algebraic Data Types to be used in both a Haskell backend
+and an Elm frontend, seamlessly sent using JSON.
+
+See it on [GitHub](http://github.com/JoeyEremondi/Haskelm) or on [Hackage](https://hackage.haskell.org/package/haskelm).
 **Giraffe: a High-Level Code Visualiser for Beginning Programmers**
 
 Link and downloads to come soon!
