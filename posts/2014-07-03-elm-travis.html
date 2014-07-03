@@ -87,6 +87,28 @@
 <li><a href="http://eremondi.com/elm-travis-cache/elm-server">elm-server</a></li>
 <li><a href="http://eremondi.com/elm-travis-cache/elm_home.tar.gz">elm_home.tar.gz</a></li>
 </ul>
+<p>Here’s an example <code>.travis.yml</code> file making use of these:</p>
+<pre class="sourceCode yaml"><code class="sourceCode yaml"><span class="fu">env:</span>
+  <span class="fu">global:</span>
+  <span class="kw">-</span> ELM_HOME=<span class="st">&quot;./elm-home&quot;</span>
+<span class="fu">install:</span>
+<span class="kw">-</span> <span class="fu">wget http:</span>//JoeyEremondi.github.io/elm-travis-cache/elm
+<span class="kw">-</span> <span class="fu">wget http:</span>//JoeyEremondi.github.io/elm-travis-cache/elm-get
+<span class="kw">-</span> <span class="fu">wget http:</span>//JoeyEremondi.github.io/elm-travis-cache/elm_home.tar.gz
+<span class="kw">-</span> chmod +x ./elm
+<span class="kw">-</span> chmod +x ./elm-get
+<span class="kw">-</span> tar -xzf elm_home.tar.gz ./
+<span class="kw">-</span> ./elm-get install johnpmayer/elm-linear-algebra
+<span class="kw">-</span> ./elm-get install johnpmayer/elm-webgl
+<span class="fu">before_script:</span>
+<span class="kw">-</span> cd build
+<span class="kw">-</span> git checkout gh-pages
+<span class="kw">-</span> git pull
+<span class="kw">-</span> cd ..
+<span class="fu">script:</span> ./elm --make --set-runtime=&quot;http://eremondi.com/elm-travis-cache/elm-runtime.js&quot; ObjTest.elm
+<span class="fu">after_script:</span>
+<span class="kw">-</span> cd build
+<span class="co">#Do stuff with whatever you build</span></code></pre>
 <p>If there’s ever a problem, or they’re out of date, just submit a Pull Request on <a href="https://github.com/JoeyEremondi/elm-travis-cache/blob/master/README.md">the README file on GitHub</a>, and the binaries will be re-generated when I accept it.</p>
 <p>Current build status: <a href="https://travis-ci.org/JoeyEremondi/elm-travis-cache"><img src="https://travis-ci.org/JoeyEremondi/elm-travis-cache.svg" alt="Foo" /></a></p>
 
