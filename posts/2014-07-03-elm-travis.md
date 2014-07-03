@@ -22,6 +22,32 @@ Alternately, you can download the files here:
 * [elm-server](http://eremondi.com/elm-travis-cache/elm-server)
 * [elm_home.tar.gz](http://eremondi.com/elm-travis-cache/elm_home.tar.gz)
 
+Here's an example `.travis.yml` file making use of these:
+
+```yaml
+env:
+  global:
+  - ELM_HOME="./elm-home"
+install:
+- wget http://JoeyEremondi.github.io/elm-travis-cache/elm
+- wget http://JoeyEremondi.github.io/elm-travis-cache/elm-get
+- wget http://JoeyEremondi.github.io/elm-travis-cache/elm_home.tar.gz
+- chmod +x ./elm
+- chmod +x ./elm-get
+- tar -xzf elm_home.tar.gz ./
+- ./elm-get install johnpmayer/elm-linear-algebra
+- ./elm-get install johnpmayer/elm-webgl
+before_script:
+- cd build
+- git checkout gh-pages
+- git pull
+- cd ..
+script: ./elm --make --set-runtime="http://eremondi.com/elm-travis-cache/elm-runtime.js" ObjTest.elm
+after_script:
+- cd build
+#Do stuff with whatever you build
+```
+
 If there's ever a problem, or they're out of date, just submit a Pull Request on 
 [the README file on GitHub](https://github.com/JoeyEremondi/elm-travis-cache/blob/master/README.md),
 and the binaries will be re-generated when I accept it.
