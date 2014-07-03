@@ -77,7 +77,7 @@
 
 <p>If you’ve ever used cabal on Travis-CI, you know that it’s painfully slow, sometimes taking up to fifteen minutes to compile and install your dependencies for a Haskell package.</p>
 <p>The thing is, you shouldn’t even need Haskell dependencies if you’re just trying to compile Elm programs. To help speed this up, I’ve made Elm binaries built on Travis-CI and hosted on my Github Pages site.</p>
-<p>To use them, just add <code>wget http://eremondi.com/elm-travis-cache/NAME_OF_BINARY</code> to your <code>.travis.yml</code> file to download them, then call them like normal binaries. You can replace <code>NAME_OF_BINARY</code> with any one of <code>elm</code>, <code>elm-get</code>, <code>elm-doc</code>, <code>elm-repl</code> or <code>elm-server</code>.</p>
+<p>To use them, just add <code>wget http://eremondi.com/elm-travis-cache/NAME_OF_BINARY</code> to your <code>.travis.yml</code> file to download them, then call them like normal binaries. You can replace <code>NAME_OF_BINARY</code> with any one of <code>elm</code>, <code>elm-get</code>, <code>elm-doc</code>, <code>elm-repl</code> or <code>elm-server</code>. There’s also <code>elm_home.tar.gz</code> which contains the runtime and some other required files.</p>
 <p>Alternately, you can download the files here:</p>
 <ul>
 <li><a href="http://eremondi.com/elm-travis-cache/elm">elm</a></li>
@@ -85,8 +85,10 @@
 <li><a href="http://eremondi.com/elm-travis-cache/elm-doc">elm-doc</a></li>
 <li><a href="http://eremondi.com/elm-travis-cache/elm-repl">elm-repl</a></li>
 <li><a href="http://eremondi.com/elm-travis-cache/elm-server">elm-server</a></li>
+<li><a href="http://eremondi.com/elm-travis-cache/elm_home.tar.gz">elm_home.tar.gz</a></li>
 </ul>
 <p>If there’s ever a problem, or they’re out of date, just submit a Pull Request on <a href="https://github.com/JoeyEremondi/elm-travis-cache/blob/master/README.md">the README file on GitHub</a>, and the binaries will be re-generated when I accept it.</p>
+<p>Current build status: <a href="https://travis-ci.org/JoeyEremondi/elm-travis-cache"><img src="https://travis-ci.org/JoeyEremondi/elm-travis-cache.svg" alt="Foo" /></a></p>
 
           </div><!-- /.blog-post -->
 
