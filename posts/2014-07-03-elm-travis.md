@@ -8,7 +8,11 @@ up to fifteen minutes to compile and install your dependencies for a Haskell pac
 The thing is, you shouldn't even need Haskell dependencies if you're just trying to compile Elm programs.
 To help speed this up, I've made Elm binaries built on Travis-CI and hosted on my Github Pages site.
 
-You can download the files here:
+To use them, just add `wget http://eremondi.com/elm-travis-cache/NAME_OF_BINARY` to your `.travis.yml` file
+to download them, then call them like normal binaries.
+You can replace `NAME_OF_BINARY` with any one of `elm`, `elm-get`, `elm-doc`, `elm-repl` or `elm-server`.
+
+Alternately, you can download the files here:
 
 * [elm](http://eremondi.com/elm-travis-cache/elm)
 * [elm-get](http://eremondi.com/elm-travis-cache/elm-get)
