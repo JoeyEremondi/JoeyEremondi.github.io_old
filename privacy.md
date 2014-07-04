@@ -9,3 +9,9 @@ We refer you to the privacy policy of such services for information about
 how data will be used or distributed.
 
 This policy does not apply to subdomains of eremondi.com which are not managed by Joseph Eremondi.
+
+External references:
+
+* [Google's privacy policy](https://www.google.com/policies/privacy/partners/)
+* [GitHub's privacy policy](https://help.github.com/articles/github-privacy-policy)
+* [Disqus's privacy policy](https://help.disqus.com/customer/portal/articles/466259-privacy-policy)
