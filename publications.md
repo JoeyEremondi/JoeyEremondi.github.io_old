@@ -7,7 +7,8 @@ toc: true
 
 **Published Papers**
 
-Joey Eremondi, "The poor mans proof assistant: using prolog to develop formal language theoretic proofs"
+Joey Eremondi, 
+["The poor mans proof assistant: using prolog to develop formal language theoretic proofs"](http://dl.acm.org/citation.cfm?id=2527300)
 Paper, SPLASH '13: The ACM SIGPLAN conference on Systems, Programming, Languages and
 Applications: Software for Humanity, 2013-10-28
 http://doi.acm.org/10.1145/2508075.2527300
