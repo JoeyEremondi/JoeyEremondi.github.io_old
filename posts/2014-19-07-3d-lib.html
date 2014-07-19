@@ -8,7 +8,7 @@
     <meta name="author" content>
     <link rel="icon" href="images/favicon.ico">
 
-    <title>Joey Eremondi - Elm binaries for Travis-CI</title>
+    <title>Joey Eremondi - Elm 3D library: please review, test and critique</title>
 
           <!-- Bootstrap core JavaScript
     =======================================the=========== -->
@@ -68,49 +68,21 @@
         <div class="col-sm-8 blog-main">
 
           <div class="blog-post">
-            <h1>Elm binaries for Travis-CI</h1>
+            <h1>Elm 3D library: please review, test and critique</h1>
 
             <div class="info">
-    Posted on July  3, 2014
+    Posted on December  7, 2014
+    
+        by Joey Eremodni
     
 </div>
 
-<p>If you’ve ever used cabal on Travis-CI, you know that it’s painfully slow, sometimes taking up to fifteen minutes to compile and install your dependencies for a Haskell package.</p>
-<p>The thing is, you shouldn’t even need Haskell dependencies if you’re just trying to compile Elm programs. To help speed this up, I’ve made Elm binaries built on Travis-CI and hosted on my Github Pages site.</p>
-<p>To use them, just add <code>wget http://eremondi.com/elm-travis-cache/NAME_OF_BINARY</code> to your <code>.travis.yml</code> file to download them, then call them like normal binaries. You can replace <code>NAME_OF_BINARY</code> with any one of <code>elm</code>, <code>elm-get</code>, <code>elm-doc</code>, <code>elm-repl</code> or <code>elm-server</code>. There’s also <code>elm_home.tar.gz</code> which contains the runtime and some other required files.</p>
-<p>Alternately, you can download the files here:</p>
-<ul>
-<li><a href="http://eremondi.com/elm-travis-cache/elm">elm</a></li>
-<li><a href="http://eremondi.com/elm-travis-cache/elm-get">elm-get</a></li>
-<li><a href="http://eremondi.com/elm-travis-cache/elm-doc">elm-doc</a></li>
-<li><a href="http://eremondi.com/elm-travis-cache/elm-repl">elm-repl</a></li>
-<li><a href="http://eremondi.com/elm-travis-cache/elm-server">elm-server</a></li>
-<li><a href="http://eremondi.com/elm-travis-cache/elm_home.tar.gz">elm_home.tar.gz</a></li>
-</ul>
-<p>Here’s an example <code>.travis.yml</code> file making use of these:</p>
-<pre class="sourceCode yaml"><code class="sourceCode yaml"><span class="fu">env:</span>
-  <span class="fu">global:</span>
-  <span class="kw">-</span> ELM_HOME=<span class="st">&quot;./elm-home&quot;</span>
-<span class="fu">install:</span>
-<span class="kw">-</span> <span class="fu">wget http:</span>//JoeyEremondi.github.io/elm-travis-cache/elm
-<span class="kw">-</span> <span class="fu">wget http:</span>//JoeyEremondi.github.io/elm-travis-cache/elm-get
-<span class="kw">-</span> <span class="fu">wget http:</span>//JoeyEremondi.github.io/elm-travis-cache/elm_home.tar.gz
-<span class="kw">-</span> chmod +x ./elm
-<span class="kw">-</span> chmod +x ./elm-get
-<span class="kw">-</span> tar -xzf elm_home.tar.gz ./
-<span class="kw">-</span> ./elm-get install johnpmayer/elm-linear-algebra
-<span class="kw">-</span> ./elm-get install johnpmayer/elm-webgl
-<span class="fu">before_script:</span>
-<span class="kw">-</span> cd build
-<span class="kw">-</span> git checkout gh-pages
-<span class="kw">-</span> git pull
-<span class="kw">-</span> cd ..
-<span class="fu">script:</span> ./elm --make --set-runtime=&quot;http://eremondi.com/elm-travis-cache/elm-runtime.js&quot; ObjTest.elm
-<span class="fu">after_script:</span>
-<span class="kw">-</span> cd build
-<span class="co">#Do stuff with whatever you build</span></code></pre>
-<p>If there’s ever a problem, or they’re out of date, just submit a Pull Request on <a href="https://github.com/JoeyEremondi/elm-travis-cache/blob/master/README.md">the README file on GitHub</a>, and the binaries will be re-generated when I accept it.</p>
-<p>Current build status: <a href="https://travis-ci.org/JoeyEremondi/elm-travis-cache"><img src="https://travis-ci.org/JoeyEremondi/elm-travis-cache.svg" alt="Foo" /></a></p>
+<p>I’ve writtena general purpose 3D library for Elm. I’d consider this an alpha release: most features are there but with some bugs and issues. Please feel free to try it, test it, or submit suggestions or pull-requests.</p>
+<p>The main idea of the library is to provide a very simple 3d interface, a wrapper around webgl, so that you can assemble scenes without having to worry about shaders or matrix math.</p>
+<p>I’ve got support for textures, lighting, cameras, and bump mapping, as well as loading of OBJ model files. There’s a fairly detailed example <a href="https://github.com/JoeyEremondi/ElmObjParser/blob/master/ObjTest.elm">here</a>.</p>
+<p>The library is on <a href="http://library.elm-lang.org/catalog/JoeyEremondi-ElmObjParser/0.4.1">elm-get</a>, and <a href="https://github.com/JoeyEremondi/ElmObjParser">GitHub</a>.</p>
+<p>I’ll rename it and write a full tutorial before a 1.0 release.</p>
+<p>Happy coding!</p>
 
     <div id="disqus_thread"></div>
     <script type="text/javascript">
