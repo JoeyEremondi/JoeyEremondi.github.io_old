@@ -1,0 +1,15 @@
+---
+title: Automatically Testing, Deploying and Publishing Elm sites with Travis-CI
+author: Joey Eremondi
+---
+
+In this post, I'm going to give detailed instructions for how you can use Travis-CI to make your Elm
+workflow much easier. There's three main things we'll use Travis-CI for:
+
+* Building and testing your Elm project on GitHub
+* Automatically deploying your built site to Github-Pages
+* Automatically publishing tagged versions of libraries to Elm-get
+
+# Preliminaries #
+
+# Building your project #
