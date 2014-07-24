@@ -1,6 +1,6 @@
 ---
 title: I Have a Degree Now!
-author: Joey Eremodni
+author: Joey Eremondi
 ---
 
 
