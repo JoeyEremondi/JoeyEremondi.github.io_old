@@ -31,6 +31,11 @@ Paper, SPLASH '13: The ACM SIGPLAN conference on Systems, Programming, Languages
 Applications: Software for Humanity, 2013-10-28
 http://doi.acm.org/10.1145/2508075.2527300
 
+**Presentations**
+
+["Insertion Operations on Deterministic Reversal-Bounded Counter Machines"](http://grlmc.wikidot.com/local--files/lata-2015/011_03eremondi_LATA_2015.pdf)
+Paper talk given at LATA 2015.
+
 **Undergraduate Thesis**
 
 Joey Eremondi Ian McQuillan (Supervisor), "A Characterization of the Shuffle Inclusion Problem on Pairs of Words of Combined Length 8 or Less
@@ -58,7 +63,4 @@ Saskatchewan, Saskatoon
 "GRAIL-MP: Introducing Paralellism into the Python Interpreter", U of S NSERC
 Undergraduate Poster Fair, Canada, Saskatchewan, Saskatoon
 
-**Submitted Papers**
-
-Joey Eremondi Ian McQuillan, "Decidability Properties of Operations on Reversal-Bounded Multicounter Languages", Theoretical Computer Science
 
