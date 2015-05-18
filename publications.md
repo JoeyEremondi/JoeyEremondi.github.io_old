@@ -11,13 +11,16 @@ Joey Eremondi, Oscar H. Ibarra, Ian McQuillan
 ["On the Complexity and Decidability of Some Problems Involving Shuffle"](https://cs.uwaterloo.ca/~shallit/DC2015/)
 Paper,  Descriptional Complexity of Formal Systems, 2015-06-25
 
-Joey Eremondi, Oscar H. Ibarra, Ian McQuillan
-["Deletion Operations on Deterministic Families of Automata"](http://www.comp.nus.edu.sg/~fstephan/tamc2015/accepted.html)
-Paper, Proceedings of the 12th Annual Conference on 
-Theory and Applications of Models of Computation, 2015-05-18
+
 
 
 **Published Papers**
+
+Joey Eremondi, Oscar H. Ibarra, Ian McQuillan
+["Deletion Operations on Deterministic Families of Automata"](http://link.springer.com/chapter/10.1007/978-3-319-17142-5_33)
+Paper, Proceedings of the 9th International Conference on 
+Theory and Applications of Models of Computation, 2015-04-16
+http://dx.doi.org/10.1007/978-3-319-17142-5_33
 
 Joey Eremondi, Oscar H. Ibarra, Ian McQuillan
 ["Insertion Operations on Deterministic Reversal-Bounded Counter Machines"](http://link.springer.com/chapter/10.1007/978-3-319-15579-1_15#)
