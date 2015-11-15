@@ -1,7 +1,7 @@
 ---
 title: I Have a Degree Now!
 author: Joey Eremondi
-layout: page
+layout: post
 ---
 
 
