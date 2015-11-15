@@ -2,7 +2,6 @@
 title: I Have a Degree Now!
 author: Joey Eremondi
 layout: post
-date: 2014-04-06 11:30:00 -0800
 ---
 
 
