@@ -6799,12 +6799,3 @@ button.close {
 }
 /*# sourceMappingURL=bootstrap.css.map */
 
-/*# Added to centre navbar */
-.navbar .nav {
-    width: 100%;
-}
-
-.navbar .nav > li {
-    float: none;
-    text-align: center;
-}
