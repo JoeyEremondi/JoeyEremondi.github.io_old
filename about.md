@@ -1,6 +1,5 @@
 ---
 title: About Me
-author: Joey Eremondi
 layout: page
 ---
 
