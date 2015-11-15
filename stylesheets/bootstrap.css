@@ -6799,3 +6799,6 @@ button.close {
 }
 /*# sourceMappingURL=bootstrap.css.map */
 
+.navbar-nav.nav-justified > li{
+    float:none;
+}
