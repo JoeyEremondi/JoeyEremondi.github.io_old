@@ -12,7 +12,7 @@ or languages I'm fond of, with the odd opinion mixed in.
 
 {% for post in site.posts limit:4 %}  
 
-[{{ post.name }}]({{ post.url }})
+[{{ post.title }}]({{ post.url }})
 
 {% endfor %}
 
