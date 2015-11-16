@@ -50,6 +50,18 @@
               <a class="blog-nav-item" href={{ page.url }}>{{ page.title  }}</a>
             {% endif %}
           {% endfor %}
+          
+          {% for page in site.pages %}
+            {% if page.category == 'normalpage' %}
+              <a class="blog-nav-item" href={{ page.url }}>{{ page.title  }}</a>
+            {% endif %}
+          {% endfor %}
+          
+          {% for page in site.pages %}
+            {% if page.category == 'endpage' %}
+              <a class="blog-nav-item" href={{ page.url }}>{{ page.title  }}</a>
+            {% endif %}
+          {% endfor %}
 
         </nav>
       </div>
