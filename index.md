@@ -1,6 +1,7 @@
 ---
 title: Home
 layout: page
+category: homepage
 ---
 
 Welcome to my blog!

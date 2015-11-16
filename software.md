@@ -1,6 +1,7 @@
 ---
 title: Software
 layout: page
+category: normalpage
 ---
 
 Below is a list of software projects I have developed or contributed code to, as well as

@@ -1,6 +1,7 @@
 ---
 title: Research
 layout: page
+category: normalpage
 ---
 
 **Reversal Bounded Counter Machines**
@@ -36,4 +37,3 @@ More information about UltraLux can be found at [SurfNet][2].
 
    [1]: http://www.youtube.com/watch?v=SZtJJOvT_wg
    [2]: http://www.nsercsurfnet.org/pmwiki.php?n=SurfNet.GutwinMandrykUbiLight
-  

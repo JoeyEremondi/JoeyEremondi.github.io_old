@@ -1,6 +1,7 @@
 ---
 title: Contact
 layout: page
+category: endpage
 ---
 
 There are several ways to get in touch with me:

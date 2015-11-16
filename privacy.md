@@ -1,6 +1,7 @@
 ---
 title: Privacy
 layout : page
+category: specialpage
 ---
 ** Privacy Policy **
 

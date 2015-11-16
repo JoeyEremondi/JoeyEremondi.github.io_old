@@ -13,7 +13,7 @@
           <!-- Bootstrap core JavaScript
     =======================================the=========== -->
     <!-- Placed at the end of the document so the pages load faster -->
- <script src="/js/jquery.min.js"></script>        
+ <script src="/js/jquery.min.js"></script>
 <link rel="stylesheet" href="/stylesheets/bootstrap.min.css">
 
 
@@ -46,7 +46,9 @@
       <div class="container">
         <nav class="blog-nav">
           {% for page in site.pages %}
-            <a class="blog-nav-item" href={{ page.url }}>{{ page.title  }}</a>
+            {% if page.category == 'homepage' %}
+              <a class="blog-nav-item" href={{ page.url }}>{{ page.title  }}</a>
+            {% endif %}
           {% endfor %}
 
         </nav>
@@ -70,8 +72,8 @@
            {{ content }}
           </div><!-- /.blog-post -->
 
-         
-          
+
+
           <!--ul class="pager">
             <li><a href="#">Previous</a></li>
             <li><a href="#">Next</a></li>
@@ -82,7 +84,7 @@
         <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
           <div class="sidebar-module sidebar-module-inset">
             <img src="http://www.gravatar.com/avatar/867246e58f9345661b506537b626766e?s=200" align="middle" class="img-rounded" />
-            
+
             <p>I'm Joey Eremondi, a Masters student in Computing Science at the University of Utrecht.</p>
           </div>
           <script>
@@ -131,11 +133,11 @@
       <p>&copy; Joseph Eremondi {{ site.time | date: '%Y' }} </p>
       <p>Built with <a href="http://jekyllrb.com/">Jekyll</a> and
         <a href="https://github.com/JoeyEremondi/JoeyEremondi.github.io">GitHub Pages,</a>
-      
-        
+
+
       <br>
       Blog template built for <a href="http://getbootstrap.com">Bootstrap</a> by <a href="https://twitter.com/mdo">@mdo</a>.</p>
-      
+
       <p><a href="http://eremondi.com/privacy.html">Privacy policy</a></p>
     </div>
 

@@ -1,6 +1,7 @@
 ---
 layout: page
 title: About Me
+category: normalpage
 ---
 
 **Education**
@@ -26,6 +27,6 @@ surrounding reversal-bounded counter machines.
 
 I was born and raised in Saskatoon, Saskatchewan, Canada.
 
-In the past, I was the president of the 
+In the past, I was the president of the
 [University of Saskatchewan Debate Society](http://usask.ca/debate),
 and I've competed at several regional and national tournaments in [CUSID](http://cusid.ca).
