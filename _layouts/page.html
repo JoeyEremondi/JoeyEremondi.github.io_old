@@ -45,12 +45,9 @@
     <div class="blog-masthead">
       <div class="container">
         <nav class="blog-nav">
-                <a class="blog-nav-item" href="http://eremondi.com/">Home</a>
-                <a class="blog-nav-item" href="http://eremondi.com/about.html">About</a>
-                <a class="blog-nav-item" href="http://eremondi.com/publications.html">Publications</a>
-                <a class="blog-nav-item" href="http://eremondi.com/research.html">Research</a>
-                <a class="blog-nav-item" href="http://eremondi.com/software.html">Software</a>
-                <a class="blog-nav-item" href="http://eremondi.com/contact.html">Contact</a>
+          {% for page in site.pages %}
+            <a class="blog-nav-item" href={{ page.url }}>{{ page.title  }}</a>
+          {% endfor %}
 
         </nav>
       </div>
