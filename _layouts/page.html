@@ -101,7 +101,9 @@
           <div class="sidebar-module">
             <h4>Recent Posts</h4>
             <ol class="list-unstyled">
-              $partial("templates/post-list.html")$
+              {% for post in site.posts limit:4 %}
+                <a href={{ post.url }}>{{ post.title }}</a>
+              {% endfor %}
             </ol>
             <a class="btn btn-primary" href="http://eremondi.com/archive.html">All Posts</a>
           </div>
