@@ -3,6 +3,23 @@ title: Elm binaries for Travis-CI
 layout: post
 ---
 
+##UPDATE
+
+Elm is now distrubuted via NPM. You can now easily load it on TravisCI with a `.travis.yml` that looks like this:
+
+    language: node_js
+    node_js:
+      - "node"
+      
+    before_install:
+      - "npm install elm@VERSION"
+      
+    script: elm make --yes
+    
+where you replace `VERSION` with the version of Elm you'd like to test with.
+
+## Elm on TravisCI
+
 If you've ever used cabal on Travis-CI, you know that it's painfully slow, sometimes taking
 up to fifteen minutes to compile and install your dependencies for a Haskell package.
 
