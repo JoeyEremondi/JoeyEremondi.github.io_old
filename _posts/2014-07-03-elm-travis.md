@@ -3,7 +3,7 @@ title: Elm binaries for Travis-CI
 layout: post
 ---
 
-##UPDATE
+## UPDATE
 
 Elm is now distrubuted via NPM. You can now easily load it on TravisCI with a `.travis.yml` that looks like this:
 
